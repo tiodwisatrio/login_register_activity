@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    android:background="#F2F2F2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sudah Punya Akun?"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="20dp"
+        android:text="Login"
+        android:textColor="#2C2C2C"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/poppins"
+        android:letterSpacing="0.06"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/textfield"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/iconlock"
+        android:drawablePadding="8dp"
+        android:elevation="4dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Confirm Password..."
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:password="true"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextTextPersonName"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Confirm Password"
+        android:textColor="#2C2C2C"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/textfield"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/iconprofile"
+        android:drawablePadding="8dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Your password..."
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:password="true"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Password"
+        android:textColor="#2C2C2C"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/textView3"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/textfield"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/iconemail"
+        android:drawablePadding="8dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Your email..."
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/teks_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email"
+        android:textColor="#2C2C2C"
+
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/field_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/teks_email"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/textfield"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/iconprofile"
+        android:drawablePadding="8dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Your username..."
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/field_username"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Username"
+        android:textColor="#2c2c2c"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/imageastronot" />
+
+
+</RelativeLayout>
